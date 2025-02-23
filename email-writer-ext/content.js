@@ -3,7 +3,7 @@ console.log("Email Writer Extension - Content Script Loaded");
 function createAIButton(){
     console.log("createAI btt")
     const button= document.createElement('div');
-    button.className="T-I J-J5-Ji aoO v7 T-I-atl L3";
+    button.className="T-I J-J5-Ji aoO v7 T-I-atl L3 ai-reply-button";
     button.style.marginRight='8px';
     button.innerHTML='AI Reply';
     button.setAttribute('role','button');
@@ -31,8 +31,8 @@ function findComposeToolbar(){
     console.log("findComposeToolBAR");
 
     const selectors=[
-        'btC',
-        'aDh',
+        '.btC',
+        '.aDh',
         '[role="toolbar"]',
         '.gU.Up'
     ];
